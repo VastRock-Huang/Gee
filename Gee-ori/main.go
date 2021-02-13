@@ -4,15 +4,9 @@ import (
 	"fmt"
 	"gee"
 	"html/template"
-	"log"
 	"net/http"
 	"time"
 )
-
-type student struct {
-	Name string
-	Age  int
-}
 
 func FormatAsData(t time.Time) string {
 	year, month, day := t.Date()
@@ -47,6 +41,5 @@ func main() {
 			})
 		})
 	}
-	log.Fatal(r.Run(":9999"))
-	//r.Run(":9999")
+	r.Run(":9999")
 }
