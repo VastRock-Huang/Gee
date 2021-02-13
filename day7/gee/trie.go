@@ -33,7 +33,7 @@ func (n *node) matchChildren(part string) []*node {
 
 func (n *node) String() string {
 	return fmt.Sprintf("node{pattern=%s, part=%s,"+
-		"is Wild=%t}", n.pattern, n.part, n.isWild)
+		"isWild=%t}", n.pattern, n.part, n.isWild)
 }
 
 func (n *node) insert(pattern string, parts []string, depth int) {
